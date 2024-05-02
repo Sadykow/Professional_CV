@@ -54,7 +54,7 @@ ItalicFont = Fontin-Italic.otf
 % Adding if execution to define between thesis and article
 \usepackage{ifthen}
 \newboolean{CV} % Is it a resule or CV
-\setboolean{CV}{true}
+\setboolean{CV}{false}
 \newboolean{SE} % Is in an IT CV or a Software Engineers
 \setboolean{SE}{true}
 
@@ -109,22 +109,21 @@ ItalicFont = Fontin-Italic.otf
 \section{Education and Training}
 \begin{tabular}{rl}	
     \textsc{Sept} 2019-2023 & \hyperref[magister]{\textbf{Master of Philosophy}}, school of \\ 
-    % \textsc{Sept} 2019-2022 & \textbf{Master of Philosophy}, school of \\
-                            & \textsc{Mechanical Medical \& Process Engineering}, \\ 
+                        & \textsc{Mechanical Medical \& Process Engineering}, \\ 
                         & \textbf{Queensland University of Technology}, Brisbane \\
     %Time-Series Machine Learning in Electrical Vehicles: Smart Battery Management through Neural-Network-Based State of Charge Prediction
     & \small\emph{Thesis Topic}: Time-Series Machine Learning in Electrical Vehicles: Smart \\
-    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Battery Management through Neural-Network-Based State \\
-    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ of Charge Prediction \\
-    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Financed by Automotive Engineering Graduate Program (AEGP)\\ 
-    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ in cooperation with Prohelion as an industry partner \\
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Battery Management through Neural-Network-Based State \\
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ of Charge Prediction. \\
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Financed by Automotive Engineering Graduate Program (AEGP)\\ 
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ in cooperation with Prohelion as an industry partner \\
     % IF
-    \ifthenelse {\boolean{SE}}
+    \ifthenelse {\boolean{CV}}
     %
     % THEN
     {
-   & \small\emph{Primary Area:}  Large sensor data processing to create multiple parallel State of\\
-   & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Charge Machine Learning models using High-Performance Computing \\
+    & \small\emph{Primary Area:}  Large sensor data processing to create multiple parallel State of\\
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Charge Machine Learning models using High-Performance Computing \\
     %& \small\emph{Primary Area} : Embedded Software Developer of Time-Series Machine  \\
     %& \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ learning (ML) model for Electric Vehicles \\
     & \small\emph{$2^{nd}$ Area:} Application of Machine Learning in Low-power Embedded devices, such \\
@@ -143,7 +142,7 @@ ItalicFont = Fontin-Italic.otf
 	& \small\emph{Primary Software Area:} High and Low Level Development \& \\
 	& \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Cloud and parallel High Performance Computing (HPC) \\ 
 	% IF
-    \ifthenelse {\boolean{SE}}
+    \ifthenelse {\boolean{CV}}
     %
     % THEN
     {
@@ -156,7 +155,13 @@ ItalicFont = Fontin-Italic.otf
 	%\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}
 % 	&\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% IF
+	\ifthenelse {\boolean{CV}}
+	%
+	% THEN
+	{
 	2014 - 2015& Standard Foundation in \textbf{Foundation Standard to Degree Pathway} \\&\normalsize\textbf{Queensland University of Technology for International Students} \\ &\normalsize \textsc{GPA:} 6.3/7.0 %\hyperlink{grds_cleli}{\hfill| \footnotesize Detailed List of Exams}
+	} {}
 % 	\\&\\
 \end{tabular}
 
@@ -392,6 +397,8 @@ Mastered common known operational systems (OSs) through Xen and QEMU/KVM para an
 %	{\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
 \ifthenelse{\boolean{CV}}
 {}{
+	\ifthenelse{\boolean{SE}}
+{}{
 \section{Referees}
 \begin{tabular}{ |p{8cm}||p{8cm}| }
 	\hline
@@ -447,6 +454,7 @@ Mastered common known operational systems (OSs) through Xen and QEMU/KVM para an
 %	\ldots \footnote{Here presented most recent and relevant experience}
 \end{tabular}
 \\ [4pc]
+}
 }
 % \begin{tabular}{ |p{8cm}||p{8cm}| }
 % 	\hline
