@@ -91,7 +91,7 @@ ItalicFont = Fontin-Italic.otf
 
 \begin{tabular}{rl}
     %\textsc{Address:}   & 3/22 Prince Street, Gaythorne, Brisbane, QLD, 4051 \\
-    \textsc{Address:}   & Brisbane, Queensland, Australia\\
+    \textsc{Address:}   & Brisbane, Queensland, Australia. (Open for relocation)\\
     \textsc{Phone:}     & +61 478 686 650\\
     \textsc{Email:}     & \href{mailto:sadykovmarat@pm.me}{sadykovmarat@pm.me} \\
     \textsc{LinkedIn:}  & \href{https://www.linkedin.com/in/marat-sadykov-0a93b0133/}{marat-sadykov-0a93b0133} \\
@@ -118,6 +118,12 @@ ItalicFont = Fontin-Italic.otf
     & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ of Charge Prediction. \\
     & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Financed by Automotive Engineering Graduate Program (AEGP)\\ 
     & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ in cooperation with Prohelion as an industry partner \\
+	& \small\emph{Primary Area:}  Large sensor data processing to create multiple parallel State of\\
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Charge Machine Learning models using High-Performance Computing \\
+    %& \small\emph{Primary Area} : Embedded Software Developer of Time-Series Machine  \\
+    %& \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ learning (ML) model for Electric Vehicles \\
+    & \small\emph{$2^{nd}$ Area:} Application of Machine Learning in Low-power Embedded devices, such \\
+    & \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ as Android, Raspberry Pi boards and TPU-enhanced controllers \\
     % IF
     \ifthenelse {\boolean{CV}}
     %
@@ -141,7 +147,7 @@ ItalicFont = Fontin-Italic.otf
 	& \textbf{Queensland University of Technology}, Brisbane \\ 
 	& \small\emph{Primary Engineering Disciplines:} Telecommunications \& Control and Dynamics\\
 	& \small\emph{Primary Software Area:} High and Low Level Development \& \\
-	& \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Cloud and parallel High Performance Computing (HPC) \\ 
+	& \small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Cloud Computing and Programming Paradigms. \\ 
 	% IF
     \ifthenelse {\boolean{CV}}
     %
@@ -170,10 +176,16 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{rl}
 	Developed skills & \small\emph{Primary Languages} : \textsc{C} and \textsc{Python} \\
 	& \small\emph{Secondary Languages} : \textsc{C++},\textsc{C\#}, \textsc{Java} \\
-	& \small\emph{Tertiary Languages} : \textsc{F\#}, \textsc{R}, \textsc{Rust}, \textsc{JavaScript}, \textsc{SQL}, \textsc{Swift}, \textsc{Assembly} \\
-	Additional skills & \small GIT, MATLAB, Code Composer Studio, RTOS, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
-	\& \small environments : & \small STM32CubeMX/TrueStudio, Cython, C to Python wrappers, Conda, \\
-	& \small Numpy \& Pandas, PyTests, TensorFlow, CUDA \\ 
+	& \small\emph{Tertiary Languages} : \textsc{F\#}, \textsc{R}, \textsc{Rust}, \textsc{SQL}, \textsc{Swift}, \textsc{Assembly} \\
+	Additional skills: & \small GIT, MATLAB, FreeRTOS, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}, Cython, C to Python wrappers, ThreadPooling \\
+	& \small with concurrent.futures or Numba, Numpy \& Pandas, PyTests, TensorFlow, CUDA \\
+	Env\&Dev boards: & \small Atmel Studio --- ATmega microcontrollers; Code Composer Studio --- TivaC1294XL; \\
+	& \small STM32CubeMX/TrueStudio --- STM32 Nucleo boards (F \& L), \\
+	& \small AmbiqSDK - Artemis boards \& Coral USB compute TPU devices; \\
+	& \small Raspberry Pi with custom etched HAT and PiPico in DIY applications. \\
+	Microcontrollers: & \small Multiplixers, Voltage, Current, Temp, HAL sensors over I2C, SPI and CAN-bus.\\
+	Debug Tools: & \small Atmel-ICE-C, STLink \& JTAG, Oscilloscopes \& Logic Analyzers.
+	
 
 	% IF
     \ifthenelse {\boolean{CV}}
@@ -200,7 +212,7 @@ ItalicFont = Fontin-Italic.otf
 	}
 	
 \end{tabular} \\[1pc]
-\small Developed an in-depth understanding of Embedded Programming during designing, prototyping and testing Battery Management Board along with QUT Motorsport student volunteers during MPhil research on the Electric vehicle. Deepened the knowledge and skill obtained at university while styding and teaching the concepts working with ATMega, STM32 and TI microcontrollers with communication protocols like SPI and I2C  for internally between components on a single board and isolated CAN-buss line in between modules. Gained a practical knowledge of debugging freshly manufactured and soldered boards using oscilloscopes and logic analyzers with controllers, which do not support JTAG breakpoint debugging.% At the late stage of research moved to primarily supporting already established concepts of the volunteer's work through GitHub tools.
+\small \textbf{Additionally, worked with Unix-based operation systems on a systems level through a personal interest in kernel patching, virtualisation and open-source library support. Participated in the development of nightly features, like Tensorflow 2.4 Attention layers before official integration and RoAdam optimiser in search of ways to improve the Time-Series model for MPhil research. Ended up writing a custom training procedure from the first principal to accommodate the novel approach to the model training.}
 % IF
 \ifthenelse {\boolean{CV}}
 %
@@ -285,19 +297,23 @@ Mastered common known operational systems (OSs) through Xen and QEMU/KVM para an
 }
 {}
 %Section: Work Experience at the top
-\section{Employment History}
+\section{Relevant Employment History}
 \begin{tabular}{r|p{13.5cm}}
-    \emph{Aug 2021} & Research Software Engineer \\\textsc{Sep 2019}&\emph{Queensland University Technology. \textbf{C and Python} }\\&\footnotesize{QUT Motorsport EV accumulator \& Battery cycling with Arbin and PSB
-	10000 4U Bidirectional DC Power Supply in cooperation with Prohelion as an industry partner, financed by AEGP grant.
+    \emph{Aug 2021} & Research Software Engineer \\\textsc{Sep 2019}&\emph{Queensland University Technology. --- \textbf{C, Python and SQL} }\\&\footnotesize{QUT Motorsport EV accumulator \& Battery cycling with Arbin and PSB
+	10000 4U Bidirectional DC Power Supply in cooperation with Prohelion as an industry partner, (financed by AEGP grant) for concurrent raw sensor data sampling and processing for further research use.
+	% \newline
+	% \newline
+	% Accumulator Battery Management System to measure current, Voltage, and temperature to determine the State of Charge (SoC) as part of the Master of Philosophy research. In addition, research and integration embedded devices, capable of running Machine Learning model on a low-power electric grid using TPU-accelerator and Sparkfun TPU powered devices or R-pi3 w/ custom HAT CAN to Wi-Fi module.
 	\newline
 	\newline
-	Accumulator Battery Management System to measure current, Voltage, and temperature to determine the State of Charge (SoC) as part of the Master of Philosophy research. In addition, research and integration embedded devices, capable of running Machine Learning model on a low-power electric grid using TPU-accelerator and Sparkfun TPU powered devices or R-pi3 w/ custom HAT CAN to Wi-Fi module.}\\\multicolumn{2}{c}{} \\ [1pc]
+	The research involved implementing several published versions of the estimating SoC, respecting source implementation against the defined research metrics, and training over dozens of datasets for cross-correlated performance measurement with the best set of hyper-parameters determined over similar trials. Over 150 models were trained in parallel and recorded to the ClickHouse database to compare against the novel implementation involving enhanced training procedures and later performance tested on low-power devices.
+	}\\\multicolumn{2}{c}{} \\ [1pc]
 	
-    \emph{Dec 2020} & Sessional Academic Tutor at University \\\textsc{Jul 2018}&\emph{Queensland University Technology. \textbf{C, Python and Java with Git} }\\&\footnotesize{Developing students' low-level C programming techniques, high-level Java Software Development and designing, supervising and managing semester-wide projects, which combines all the above skills to build final-year projects using TensorFlow and Python for Image Processing, Gas Sensor readings and Flask and Node.js Web-based server deployment. In addition,  throughout career, tutored students' high-level programming knowledge using Java, Agile practices, version control with Git, and test-driven development. Also, introduced the basics of microcontrollers, assembly-based optimisations and certain levels of Real-Time Operational Systems to both First and Fourth-year students.}\\\multicolumn{2}{c}{} \\ [1pc]
+    \emph{Dec 2020} & Sessional Academic Tutor at University \\\textsc{Jul 2018}&\emph{Queensland University Technology. --- \textbf{C, Python and Java with Git and TensorFlow} }\\&\footnotesize{Developing students' low-level C programming techniques, high-level Java Software Development and designing, supervising and managing semester-wide projects, which combines all the above skills to build final-year projects using TensorFlow and Python for Image Processing, Gas Sensor readings and Flask and Node.js Web-based server deployment. In addition,  throughout career, tutored students' high-level programming knowledge using Java, Agile practices, version control with Git, and test-driven development. Also, introduced the basics of microcontrollers, assembly-based optimisations and certain levels of Real-Time Operational Systems to both First and Fourth-year students.}\\\multicolumn{2}{c}{} \\ [1pc]
 	
-	\emph{May 2019} & Software Developer on a Laravel-based project \\\textsc{Feb 2018}&\emph{NetComp. \textbf{AWS, PHP and JavaScript}}\\&\footnotesize{The company's project is based on PHP, JavaScript, and Laravel, which are established in AWS. The project was distributed across several client companies. The job was to improve, design and implement new architecture, preserving and further maintaining client data.}\\\multicolumn{2}{c}{} \\ [1pc]
+	% \emph{May 2019} & Software Developer on a Laravel-based project \\\textsc{Feb 2018}&\emph{NetComp. --- \textbf{AWS, PHP and JavaScript}}\\&\footnotesize{The company's project is based on PHP, JavaScript, and Laravel, which are established in AWS. The project was distributed across several client companies. The job was to improve, design and implement new architecture, preserving and further maintaining client data.}\\\multicolumn{2}{c}{} \\ [1pc]
 	
-	\emph{Feb 2018} & Software Engineering Intern \\\textsc{Nov 2017}&\emph{Deeep Sense. \textbf{Java and Swift}}\\&\footnotesize{Implemented an application for a quick Near Field Communication (NFC) file transfer. This approach will be used to save buying receipts straight to a smartphone instead of a printed copy or email message.}\\\multicolumn{2}{c}{}
+	% \emph{Feb 2018} & Software Engineering Intern \\\textsc{Nov 2017}&\emph{Deeep Sense. --- \textbf{Java and Swift}}\\&\footnotesize{Implemented an application for a quick Near Field Communication (NFC) file transfer. This approach will be used to save buying receipts straight to a smartphone instead of a printed copy or email message.}\\\multicolumn{2}{c}{}
 % \ifthenelse{\boolean{CV}}
 % {
 %     \ifthenelse {\boolean{SE}}
@@ -346,6 +362,15 @@ Mastered common known operational systems (OSs) through Xen and QEMU/KVM para an
 \section{Relevant Projects and University Involvement}
 % \subsection{Projects Involved}
 	\begin{tabular}{rl}
+		\textsc{Jan} 2020 & Open Source work involving \textbf{QEMU virtualisation} and Qubes OS \textbf{Xen} library integration \\
+		& for applied hardware. \\
+		& \tabitem \textbf{Xen stubdom} patching to enable more than 3.5GB RAM for GPU-passthrough. \\
+		& \tabitem \textbf{pfSense} based HVM as a network provider to other VMs. \\
+		& \tabitem Nested-virtualisation for MacOS VM implementation. \\
+		& \tabitem Qubes OS community support as one of the Admins. \\
+		& \tabitem Hybrind-core CPU performance and schedulers (acpi \& hwp) testing and reporting.\\
+		& \tabitem ACS kernel patch for multi-GPU IOMMU group, despite secury flaw. \\ [1pc]
+
 	    % \textsc{Jun} 2019 & \textbf{Augmented Reality} - VR Tank Commander Simulator: \\
 	    %     & \tabitem Reconstruction of surroundings from Kodak 360$^{\circ}$ camera to \\
 	    %     & \textbf{Unity Game Engine}. \\ % with Raspberry Pi and Image Processing
@@ -355,8 +380,13 @@ Mastered common known operational systems (OSs) through Xen and QEMU/KVM para an
         \textsc{Jun} 2019 & Embedded Systems University Project: \\
             & \tabitem Building Brushless DC motor from Texas Instruments with \textbf{RTOS}. \\
             & \tabitem TivaC1294XL development board as primary \textbf{C} development \\
-            & component and \textbf{Code Composer Studio}. \\ [1pc]
-            
+            & component and \textbf{Code Composer Studio}. \\ 
+			& \tabitem Integration and \textbf{multi-thread synchronisation via queues, priorities,} \\
+			& \textbf{Software/Hardware interupts} between all members work, involving sensory, \\
+			& GUI event and motor controls. \\
+			% & \tabitem Technical documentation and presentation outlining the complexity of the \\
+			% & implemented algorithm in simple human terms with Gantt charts in front of \\
+			% & the committee.            
         % \textsc{Dec} 2018 & Cloud Computing Project with Amazon Virtual Machine - \textbf{AWS}: \\
         %     & \tabitem Tensorlow.js to create a load on \textbf{AWS with dynamic resizing} and \\
         %     & detect the number of cars through webcams. \\
@@ -375,9 +405,9 @@ Mastered common known operational systems (OSs) through Xen and QEMU/KVM para an
 		%     & \tabitem It is intended to help people with restricted abilities to perform tasks. \\ 
 		%     & \tabitem Implementation of a virtual companion who will guide and track user \\ & activities around the established area.\\ [1pc]
 		    
-		\textsc{Mar} 2017 & Embedded Systems Design of \textbf{Digital Voice Recorder}: \\
-		    & \tabitem QUT designed the Teensy board with several other components \\
-		    & \tabitem Chebyshev anti-aliasing filter \textbf{LMC6484} \\ [1pc]
+		% \textsc{Mar} 2017 & Embedded Systems Design of \textbf{Digital Voice Recorder}: \\
+		%     & \tabitem QUT designed the Teensy board with several other components \\
+		%     & \tabitem Chebyshev anti-aliasing filter \textbf{LMC6484} \\ [1pc]
 		    
 		% \textsc{Jan} 2017 & \textbf{Developed algorithm} for video and audio conversation using screen \\ &recording for both API and NaCl with \textbf{FFmpeg}.
 	\end{tabular}
