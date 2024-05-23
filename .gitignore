@@ -4,8 +4,5 @@
 *.log
 *.pdf
 *.xdv
-cv.fdb_latexmk
-cv.fls
-cv.out
-cv.synctex.gz
-cv.pdf
+*.out
+*.synctex.gz
